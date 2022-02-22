@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+}
+html, body{
+  cursor: default;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+input, textarea, button, select {text-shadow: none !important;box-shadow: none !important}
+input[type=text],
+input[type=email],
+input[type=password]{-webkit-appearance: none !important;-moz-appearance: none !important;appearance: none !important}
+button{border: none}
+input:active, textarea:active, button:active{outline: none}
+textarea {resize: none}
+img, span, a, button, input, svg{display: inline-block}
+a{text-decoration: none}
+
+.clear{position: relative}
+.clear:after{
+  content:'';
+  display: block;
+  clear: both
+}

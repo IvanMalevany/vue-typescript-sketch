@@ -1,0 +1,12 @@
+.landing-pages{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main-color);
+  }
+}

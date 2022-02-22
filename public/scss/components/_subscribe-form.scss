@@ -1,0 +1,42 @@
+.subscribe-form{
+  input[type=text]{
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__name{
+    margin-bottom: 39px;
+
+    input[type=text]{
+      padding: 0 20px 0 41px;
+    }
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    div:first-child{
+      width: calc(100% - 190px);
+    }
+    div:nth-child(2){
+      width: 150px;
+    }
+
+    input[type=text]{
+      padding: 0 20px 0 27px;
+    }
+
+    .btn{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 14px 38px;
+      display: block;
+      width: 100%
+    }
+  }
+}

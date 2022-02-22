@@ -1,0 +1,278 @@
+<template>
+    <div class="app__view">
+
+        <div class="gallery-nav">
+            <div class="gallery-nav__el gallery-nav__home">
+                <router-link :to="{name: 'LandingPage'}">
+                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 12.5L4.72222 10.2778M4.72222 10.2778L12.5 2.5L20.2778 10.2778M4.72222 10.2778V21.3889C4.72222 22.0025 5.21968 22.5 5.83333 22.5H9.16667M20.2778 10.2778L22.5 12.5M20.2778 10.2778V21.3889C20.2778 22.0025 19.7803 22.5 19.1667 22.5H15.8333M9.16667 22.5C9.78032 22.5 10.2778 22.0025 10.2778 21.3889V16.9444C10.2778 16.3308 10.7752 15.8333 11.3889 15.8333H13.6111C14.2248 15.8333 14.7222 16.3308 14.7222 16.9444V21.3889C14.7222 22.0025 15.2197 22.5 15.8333 22.5M9.16667 22.5H15.8333" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </router-link>
+            </div>
+            <div></div>
+            <div class="gallery-nav__el gallery-nav__logo">
+                <div class="logo">do<span>NFT</span></div>
+            </div>
+            <div></div>
+            <div class="gallery-nav__el gallery-nav__search">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 21.5L15.5 15.5M17.5 10.5C17.5 14.366 14.366 17.5 10.5 17.5C6.63401 17.5 3.5 14.366 3.5 10.5C3.5 6.63401 6.63401 3.5 10.5 3.5C14.366 3.5 17.5 6.63401 17.5 10.5Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </div>
+            <div></div>
+            <div class="gallery-nav__el gallery-nav__profile">
+                <div class="gallery-nav__profile-cover">
+                    <div></div>
+                    <div>Fluffy Cat</div>
+                    <div>Ethereum</div>
+                </div>
+            </div>
+            <div></div>
+            <div class="gallery-nav__el gallery-nav__buttons">
+                <div class="profile-settings">
+                    <div><span class="btn profile-settings__sign">Log out</span></div>
+                    <div><span class="profile-settings__btn"><svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 15.6441C20.4248 16.0762 19.2507 16.3139 18.021 16.3139C12.8655 16.3139 8.68607 12.1345 8.68607 6.97901C8.68607 5.74932 8.92384 4.57516 9.35591 3.5C5.92343 4.87942 3.5 8.23924 3.5 12.1651C3.5 17.3206 7.67939 21.5 12.8349 21.5C16.7608 21.5 20.1206 19.0766 21.5 15.6441Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+                    <div><span class="profile-settings__btn"><svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 12.5C21.5 17.4706 17.4706 21.5 12.5 21.5M21.5 12.5C21.5 7.52944 17.4706 3.5 12.5 3.5M21.5 12.5H3.5M12.5 21.5C7.52944 21.5 3.5 17.4706 3.5 12.5M12.5 21.5C14.1569 21.5 15.5 17.4706 15.5 12.5C15.5 7.52944 14.1569 3.5 12.5 3.5M12.5 21.5C10.8431 21.5 9.5 17.4706 9.5 12.5C9.5 7.52944 10.8431 3.5 12.5 3.5M3.5 12.5C3.5 7.52944 7.52944 3.5 12.5 3.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-page">
+            <div class="gallery-page__filters">
+
+                <div class="filter">
+                    <div class="filter__title">Creation mode</div>
+                    <div class="filter__toggle">
+                        <div class="active">Single</div>
+                        <div></div>
+                        <div>Multiple</div>
+                    </div>
+                    <div class="filter__btn">Add effect</div>
+                </div>
+
+                <div class="filter">
+                    <div class="filter__title">Flow view</div>
+                    <div class="filter__files">
+                        <div class="filter__file">
+                            <div class="filter__btn marked">Bundled NFTs</div>
+                            <div></div>
+                            <div class="marked">
+                                <svg viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7468 5.94444L6.4293 13.262C5.56147 14.1298 5.56147 15.5369 6.4293 16.4047C7.29714 17.2725 8.70417 17.2725 9.572 16.4047L16.6989 9.08714C18.4346 7.35148 18.4346 4.53741 16.6989 2.80175C14.9632 1.06608 12.1492 1.06608 10.4135 2.80175L3.28661 10.1193C0.68311 12.7228 0.68311 16.9439 3.28661 19.5474C5.8901 22.1509 10.1112 22.1509 12.7147 19.5474L19.6673 12.6111" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__file">
+                            <div class="filter__btn">My NFTs</div>
+                            <div></div>
+                            <div class="default">
+                                <svg viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7468 5.94444L6.4293 13.262C5.56147 14.1298 5.56147 15.5369 6.4293 16.4047C7.29714 17.2725 8.70417 17.2725 9.572 16.4047L16.6989 9.08714C18.4346 7.35148 18.4346 4.53741 16.6989 2.80175C14.9632 1.06608 12.1492 1.06608 10.4135 2.80175L3.28661 10.1193C0.68311 12.7228 0.68311 16.9439 3.28661 19.5474C5.8901 22.1509 10.1112 22.1509 12.7147 19.5474L19.6673 12.6111" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__file">
+                            <div class="filter__btn">All effects</div>
+                            <div></div>
+                            <div>
+                                <svg viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7468 5.94444L6.4293 13.262C5.56147 14.1298 5.56147 15.5369 6.4293 16.4047C7.29714 17.2725 8.70417 17.2725 9.572 16.4047L16.6989 9.08714C18.4346 7.35148 18.4346 4.53741 16.6989 2.80175C14.9632 1.06608 12.1492 1.06608 10.4135 2.80175L3.28661 10.1193C0.68311 12.7228 0.68311 16.9439 3.28661 19.5474C5.8901 22.1509 10.1112 22.1509 12.7147 19.5474L19.6673 12.6111" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <div class="filter__title">Filters</div>
+                    <div class="filter__btn">Create new</div>
+                    <div class="filter__btn">Manage contracts</div>
+                </div>
+
+            </div>
+            <div class="gallery-page__data">
+
+                <div class="nft-section">
+                    <div class="nft-section__top">
+                        <div>My NFTs</div>
+                        <div class="open">
+                            <span class="nft-section__btn">Edit</span>
+                            <span class="nft-section__btn">Burn</span>
+                            <span class="nft-section__btn">Send</span>
+                            <span class="nft-section__btn">Change</span>
+                            <span class="nft-section__btn">Details</span>
+                            <span class="nft-section__btn">
+                                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6385 3.96368C11.1123 2.01211 13.8877 2.01211 14.3615 3.96368C14.6676 5.22437 16.1119 5.82264 17.2198 5.14761C18.9348 4.10266 20.8973 6.06523 19.8524 7.78021C19.1774 8.88806 19.7756 10.3324 21.0363 10.6385C22.9879 11.1123 22.9879 13.8877 21.0363 14.3615C19.7756 14.6676 19.1774 16.1119 19.8524 17.2198C20.8973 18.9348 18.9348 20.8973 17.2198 19.8524C16.1119 19.1774 14.6676 19.7756 14.3615 21.0363C13.8877 22.9879 11.1123 22.9879 10.6385 21.0363C10.3324 19.7756 8.88806 19.1774 7.78021 19.8524C6.06523 20.8973 4.10266 18.9348 5.14761 17.2198C5.82264 16.1119 5.22437 14.6676 3.96368 14.3615C2.01211 13.8877 2.01211 11.1123 3.96368 10.6385C5.22437 10.3324 5.82264 8.88806 5.14761 7.78021C4.10266 6.06523 6.06523 4.10265 7.78021 5.14761C8.88806 5.82264 10.3324 5.22437 10.6385 3.96368Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.8333 12.5C15.8333 14.341 14.341 15.8333 12.5 15.8333C10.6591 15.8333 9.16667 14.341 9.16667 12.5C9.16667 10.6591 10.6591 9.16667 12.5 9.16667C14.341 9.16667 15.8333 10.6591 15.8333 12.5Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="nft-section__items">
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item active">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="75" height="75" rx="37.5"/>
+                                        <path d="M23 40.1428L31.5714 48.7142L53 27.2856" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">0x12456789</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nft-section">
+                    <div class="nft-section__top">
+                        <div>All Effects</div>
+                        <div>
+                            <span class="nft-section__btn">Edit</span>
+                            <span class="nft-section__btn">Burn</span>
+                            <span class="nft-section__btn">Send</span>
+                            <span class="nft-section__btn">Change</span>
+                            <span class="nft-section__btn">Details</span>
+                            <span class="nft-section__btn">
+                                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6385 3.96368C11.1123 2.01211 13.8877 2.01211 14.3615 3.96368C14.6676 5.22437 16.1119 5.82264 17.2198 5.14761C18.9348 4.10266 20.8973 6.06523 19.8524 7.78021C19.1774 8.88806 19.7756 10.3324 21.0363 10.6385C22.9879 11.1123 22.9879 13.8877 21.0363 14.3615C19.7756 14.6676 19.1774 16.1119 19.8524 17.2198C20.8973 18.9348 18.9348 20.8973 17.2198 19.8524C16.1119 19.1774 14.6676 19.7756 14.3615 21.0363C13.8877 22.9879 11.1123 22.9879 10.6385 21.0363C10.3324 19.7756 8.88806 19.1774 7.78021 19.8524C6.06523 20.8973 4.10266 18.9348 5.14761 17.2198C5.82264 16.1119 5.22437 14.6676 3.96368 14.3615C2.01211 13.8877 2.01211 11.1123 3.96368 10.6385C5.22437 10.3324 5.82264 8.88806 5.14761 7.78021C4.10266 6.06523 6.06523 4.10265 7.78021 5.14761C8.88806 5.82264 10.3324 5.22437 10.6385 3.96368Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.8333 12.5C15.8333 14.341 14.341 15.8333 12.5 15.8333C10.6591 15.8333 9.16667 14.341 9.16667 12.5C9.16667 10.6591 10.6591 9.16667 12.5 9.16667C14.341 9.16667 15.8333 10.6591 15.8333 12.5Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="nft-section__items">
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item active">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="75" height="75" rx="37.5"/>
+                                        <path d="M23 40.1428L31.5714 48.7142L53 27.2856" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">0x12456789</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item active">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="75" height="75" rx="37.5"/>
+                                        <path d="M23 40.1428L31.5714 48.7142L53 27.2856" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">0x12456789</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                        <div class="nft-section__item">
+                            <div class="nft-section__item-img">
+                                <div class="nft-section__item-svg">
+                                    <svg viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M94.2857 0.285645H5.71429C2.57143 0.285645 0 2.85707 0 5.99993V65.9999C0 69.1428 2.57143 71.7142 5.71429 71.7142H94.2857C97.4286 71.7142 100 69.1428 100 65.9999V5.99993C100 2.85707 97.4286 0.285645 94.2857 0.285645ZM35.7143 10.2856C39.7143 10.2856 42.8571 13.4285 42.8571 17.4285C42.8571 21.4285 39.7143 24.5714 35.7143 24.5714C31.7143 24.5714 28.5714 21.4285 28.5714 17.4285C28.5714 13.4285 31.7143 10.2856 35.7143 10.2856ZM79.1429 61.7142H20.8571C16.8571 61.7142 14.5714 57.4285 16.5714 54.2856L25.1429 40.2856C26.8571 37.4285 30.8571 37.7142 32.5714 40.5714L39.7143 53.4285L57.4286 26.8571C59.1429 24.2856 62.8571 24.2856 64.5714 26.8571L83.4286 54.2856C85.4286 57.1428 83.1429 61.7142 79.1429 61.7142Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="nft-section__item-name">Meta name</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<script setup lang="ts">
+    // import Nav from '../components/LandingPage/Nav.vue'
+    // import Start from '../components/LandingPage/Start.vue'
+    // import Subscribe from '../components/LandingPage/Subscribe.vue'
+    //
+    // import WalletConnectModal from '../components/LandingPage/WalletConnectModal.vue'
+    // import WalletConnectQRModal from '../components/LandingPage/WalletConnectQRModal.vue'
+</script>

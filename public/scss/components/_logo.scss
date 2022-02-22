@@ -1,0 +1,12 @@
+.logo{
+  color: var(--main-color);
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 30px;
+  line-height: 37px;
+
+  span{
+    color: var(--marked-color);
+    font-weight: 700;
+  }
+}

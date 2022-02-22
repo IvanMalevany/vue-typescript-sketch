@@ -1,0 +1,22 @@
+$font-family: 'Montserrat', sans-serif;
+$assets: '/img/';
+
+:root {
+  --main-color: #fff;
+  --marked-color: #63E6BE;
+  --marked-btn-color: #3C165C;
+  --sub-color: rgba(255, 255, 255, .5);
+
+  --btn-na-background: rgba(0, 0, 0, .125);
+  --btn-na-color: #775C8D;
+
+  /*  connect modal  */
+  --cm-step-bg: #3C165C;
+  --cm-step-option-hover-bg: #441969;
+  --cm-step-footer-na: #775C8D;
+
+  /*  gallery page  */
+  --gp-el-bg: rgba(255, 255, 255, .05);
+  --gp-sub-el-bg: rgba(255, 255, 255, .075);
+  --gp-btn-color: #EBE7EE;
+}

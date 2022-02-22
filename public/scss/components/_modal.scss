@@ -1,0 +1,47 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  display: none;
+
+  &.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    min-width: 320px;
+    background: var(--cm-step-option-hover-bg);
+  }
+
+  &__close{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+
+    &:hover{
+      background: #3C165C;
+    }
+
+    svg{
+      width: 20px;
+      height: 20px;
+
+      path{
+        stroke: var(--marked-color)
+      }
+    }
+  }
+}

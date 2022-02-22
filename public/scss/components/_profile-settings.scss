@@ -1,0 +1,33 @@
+.profile-settings{
+  display: grid;
+  grid-template-columns: 1fr 65px 45px;
+
+  &__sign{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 100px;
+    height: 45px;
+    padding: 12px 23px;
+  }
+
+  &__btn{
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    svg{
+      width: 25px;
+      height: 25px;
+
+      path{
+        stroke: var(--marked-color)
+      }
+    }
+  }
+}

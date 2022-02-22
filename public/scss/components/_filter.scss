@@ -1,0 +1,115 @@
+.filter{
+  background: var(--gp-el-bg);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+
+  & + & {
+    margin-top: 30px
+  }
+
+  & > div + div{
+    margin-top: 16px
+  }
+
+  &__title{
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--gp-btn-color);
+    border: 1px solid var(--gp-sub-el-bg);
+    padding: 11px 0;
+  }
+
+  &__btn{
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--gp-btn-color);
+    background: var(--gp-sub-el-bg);
+    padding: 12px 0;
+    cursor: pointer;
+
+    &.marked{
+      background: var(--marked-color);
+      color: var(--marked-btn-color)
+    }
+  }
+
+  &__toggle{
+    background: var(--gp-sub-el-bg);
+    border-radius: 7px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 15px 1fr;
+
+    div:nth-child(1),
+    div:nth-child(3){
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 20px;
+      text-align: center;
+      color: var(--gp-btn-color);
+      padding: 12px 0 13px 0;
+
+      &.active{
+        background: var(--marked-color);
+        color: var(--marked-btn-color)
+      }
+    }
+  }
+
+  &__files{
+
+  }
+
+  &__file{
+    display: grid;
+    grid-template-columns: 1fr 13px 45px;
+
+    & + & {
+      margin-top: 16px
+    }
+
+    div:nth-child(3){
+      background: var(--gp-sub-el-bg);
+      cursor: pointer;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg{
+        width: 21px;
+        height: 23px;
+
+        path{
+          stroke: var(--marked-color);
+        }
+      }
+
+      &.default{
+        svg{
+          path{
+            stroke: var(--gp-btn-color);
+          }
+        }
+      }
+
+      &.marked{
+        background: var(--marked-color);
+        svg{
+          path{
+            stroke: var(--marked-btn-color);
+          }
+        }
+      }
+    }
+  }
+}

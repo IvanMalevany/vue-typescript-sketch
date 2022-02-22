@@ -1,0 +1,12 @@
+.btn{
+  background: var(--marked-color);
+  color: var(--marked-btn-color);
+  border-radius: 100px;
+  cursor: pointer;
+
+  &_na{
+    background: var(--btn-na-background);
+    color: var(--btn-na-color);
+    cursor: default;
+  }
+}

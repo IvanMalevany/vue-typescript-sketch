@@ -1,0 +1,18 @@
+.gallery-page{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__filters{
+    width: 275px
+  }
+
+  &__data{
+    width: calc(100% - 275px - 30px);
+  }
+
+  &__actions{
+    position: absolute;
+    
+  }
+}

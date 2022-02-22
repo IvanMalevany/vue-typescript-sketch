@@ -1,0 +1,21 @@
+.landing-nav{
+  display: grid;
+  grid-template-columns: 102px 1fr 536px 240px;
+  padding: 30px 0;
+
+  &__logo{
+    padding-top: 4px;
+  }
+
+  &__search{
+    padding: 0 70px;
+  }
+
+  &__pages{
+    padding: 11px 71px 0 0;
+  }
+
+  &__buttons{
+
+  }
+}

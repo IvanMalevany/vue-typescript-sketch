@@ -1,0 +1,96 @@
+.landing-start{
+  padding: 120px 0;
+
+  &__cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text{
+    padding-right: calc(100% - 450px - 700px);
+
+    h1, h2{
+      color: var(--main-color);
+
+      span{
+        display: inline;
+        color: var(--marked-color)
+      }
+    }
+
+    h1{
+      font-size: 64px;
+      line-height: 78px;
+      font-weight: 700;
+      margin-bottom: 30px;
+
+      span{
+        font-weight: 500;
+      }
+    }
+
+    h2{
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 15px;
+    }
+
+    h3{
+      font-size: 22px;
+      line-height: 27px;
+      color: var(--main-color);
+      margin-bottom: 41px;
+    }
+  }
+
+  &__connect{
+    position: relative;
+
+    .btn{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 14px 41px;
+    }
+
+    svg{
+      width: 102px;
+      height: 16px;
+      position: absolute;
+      left: 299px;
+      top: 17px;
+
+      path{
+        fill: var(--marked-color)
+      }
+    }
+  }
+
+  &__banner{
+
+  }
+
+  &__img{
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
+    border-radius: 30px;
+    width: 450px;
+    height: 450px;
+    background: url(#{$assets}lp_lizard.svg) no-repeat right bottom rgba(255, 255, 255, 0.05);
+    padding: 40px 40px;
+
+    span{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      color: var(--marked-color);
+      background: #502B70;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+      padding: 18px 0;
+    }
+  }
+}
