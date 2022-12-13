@@ -20,8 +20,6 @@
     }
 </script>
 <script setup lang="ts">
-    import {defineEmits, defineProps} from "vue";
-
     defineProps<{ active?: boolean }>()
 
     const emit = defineEmits<{
