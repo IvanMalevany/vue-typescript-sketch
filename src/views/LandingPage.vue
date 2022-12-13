@@ -1,10 +1,7 @@
 <template>
     <div class="app__view">
-
         <Nav/>
-
         <Start/>
-
         <Subscribe/>
     </div>
 

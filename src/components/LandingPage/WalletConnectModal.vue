@@ -99,5 +99,4 @@
         close()
         openQRCodeModal()
     }
-
 </script>
