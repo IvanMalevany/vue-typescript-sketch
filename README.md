@@ -1,4 +1,4 @@
-# Simple sketch
+# Simple sketch of Vue app
 
 This is demo application to represent simple sketch developed with Vue 3 + Typescript + Vite
 
